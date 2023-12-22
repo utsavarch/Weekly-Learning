@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            let x, y, z;
+            x = y = z = 3 + 2;
+            alert(x); // output 5
+            alert(y); // output 5
+            alert(z); // output 5
+            /*let n = 2;
+            n = n + 5;
+            n = n * 2;*/
+            //can be shorten as
+            let n = 2;
+            n += 5; // now n = 7 (same as n = n + 5)
+            alert(n);
+            n *= 2; // now n = 14 (same as n = n * 2)
+            alert(n); // 14
+            let m = 2;
+            m *= 3 + 5; // right part evaluated first, same as n *= 8
+            alert(m); // 16
+        </script>
+    </body>
+</html>
