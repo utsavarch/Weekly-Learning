@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script>
+            /*All Comparison operator return boolen as result (true or false)*/
+            alert( 90 > 3 );  // true
+            alert( 5 == 0 ); // false
+            alert( 5 != 0 ); // true
+            //assigning to a variable
+            let r = 2 > 100;
+            alert(r); // false
+            //Comparision of string js uses dictionary for comparisons
+            alert( 'X' > 'C' ); // true
+            alert( 'Glaw' > 'Glee' ); // false
+            alert( 'Be' > 'Bee' ); // false
+            //A and a are not equal a is greater as its index is higher in encoding
+            alert( '2' > 2 ); // false, string '2' converted to numeric 2
+            alert( '01' == 1 ); // true, string '01' converted to numeric 1
+            //boolean values
+            alert(true == 1); //true
+            alert(false == 0); //ture
+            alert(false == 1); // false
+
+            let a = 0;
+            alert( Boolean(a) ); // false
+            let b = "0";
+            alert( Boolean(b) ); // true , boolean considers nonempty string as true.
+            alert(a == b); // true
+
+            //assignments 
+            alert(0==false); // true
+            alert(""==false); // true
+            //differentiate 0 from false with === strict equality
+            alert( 0 === false ); //false beacuse 0 is number and not indicating false;
+            alert(null===undefined); //false beacuse different type
+            alert(null==undefined); //true
+            
+            alert( null > 0 );  // false
+            alert( null == 0 ); // false
+            alert( null >= 0 ); // true
+            /*== and comparision >=,>,<,<= treats null differently comparisons treats null as 0*/
+            //Comparision of undefined reutrns false as even if it is converted to numeric value it becoms NaN.
+        </script>
+    </body>
+</html>
