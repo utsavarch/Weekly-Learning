@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            let year = prompt('Which year is this?', '');
+            if (year == 2023 || 2080) alert( 'You are right!' );
+            //executing more than one statement
+            if(year == 2023){
+                alert("The year is about to end");
+                alert("Happy New Year");
+            }
+            //if(...) the condition inside bracket is taken as boolean either false or true
+            //if(o){} -> false
+            //if(1){} -> ture
+            //passing pre evaluated boolean value to if condition
+            let cont = (year==2080)
+            if(cont){
+                alert("You must be from Nepal");
+            }
+        </script>
+    </body>
+</html>

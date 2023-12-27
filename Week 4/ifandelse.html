@@ -1,0 +1,33 @@
+<!-- Can Vote or Not using if else and elseif -->
+<html>
+    <head>
+        <title>Vote</title>
+        <style>
+            .Heading{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Heading"><h1>Vote</h1></div>
+        <form onsubmit="checkAge(event)">
+            <label>Age:</label><br>
+            <input type="number" id="age" name="age"><br>
+            <input type="submit"><br><br>
+          </form>
+        <script>
+            function checkAge(event) {
+                var age = document.getElementById('age').value;
+                if (age === '') {
+                    alert("Please enter your age.");
+                }
+                else if (parseInt(age) >= 18) {
+                        alert("You can vote!");
+                } 
+                else {
+                        alert("You cannot vote!");
+                }
+                }
+        </script>
+    </body>
+</html>
