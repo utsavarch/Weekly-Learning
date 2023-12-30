@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            let a = 2;
+            if(a==2 || a== 1){
+                alert("Top 2");
+            }
+            alert( 1 || 0 ); // 1 (1 is truthy)
+            alert( null || 1 ); // 1 (1 is the first truthy value)
+            alert( null || 0 || 1 ); // 1 (the first truthy value)
+            alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+            alert(3||2||3); //output 3 as it is first value
+            let b = "";
+            let c = "";
+            alert(b||c||"default1");
+            let d = "";
+            let e = "hi";
+            alert(d||e||"default2");
+            true || alert("not printed");//find true at first and returns second part alert is not run
+            false || alert("printed");//find false and goes to the second part and runs the alert
+            alert( 1 && 0 ); //returns first false vlaue 1 is true output 0
+            alert( 1 && 5 );// 1 is ture output 5
+            alert( null && 5 );//first value is false output null
+            alert( 1 && 2 && null && 3 );//returns null
+            alert( 1 && 2 && 5 );//all truth 5 is returned
+            //precedence of && is higer than ||
+            alert(!false);
+            alert(!1)
+        </script>
+    </body>
+</html>
