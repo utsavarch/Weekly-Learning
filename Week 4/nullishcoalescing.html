@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            //a??b returns a if it is not null else reutrns b.
+            //a??b equals to (a !== null && a !== undefined) ? a : b; 
+            let u;
+            alert(u??"Utsav"); //output Utsav as u is undefined
+            let v = "Utsav";
+            alert(v??"error");
+            //using multiple ??
+            let fname = null;
+            let lname = null;
+            let nickname = "Jordan";
+            alert(fname??lname??nickname??"Stranger");
+            // || vs ??
+            let h = 0;
+            alert(h || 5.9); // 100
+            alert(h ?? 5.9); // 0
+        </script>
+    </body>
+</html>
