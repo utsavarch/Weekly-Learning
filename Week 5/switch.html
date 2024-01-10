@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            let age = prompt("Enter Your Age:", "");
+
+            switch (true) {
+                case (age >= 0 && age <= 12):
+                    alert("Child");
+                    break;
+
+                case (age > 12 && age <= 19):
+                    alert("Teen");
+                    break;
+
+                case (age > 19 && age <= 45):
+                    alert("Adult");
+                    break;
+
+                case (age > 45):
+                    alert("Old");
+                    break;
+
+                default:
+                    alert("^-^");
+                    break;
+            }
+        </script>
+    </body>
+</html>
