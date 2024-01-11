@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+            //function declaration
+            function showmsg(){
+                alert("Hello World");
+            }
+
+            //function calling
+            showmsg();
+
+            //local variable
+            function local(){
+                let msg = "Hi";
+                alert(msg); //prints Hi
+            }
+            local();
+            //alert(msg) // error here local variable outside scope
+
+            let name = "Utsav";
+            function outervariable(){
+                let msg = 'Hello' + name;
+                alert(msg); //output Hello Utsav
+            }
+            outervariable();
+            //function can change the value for outer variable as well
+            let out = 1;
+            function outer(){
+                out++;
+            }
+            alert(out);//1 before function call
+            outer(); //function call
+            alert(out); //2 after function call
+        </script>
+    </body>
+</html>
