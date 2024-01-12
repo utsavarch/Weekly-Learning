@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            function add(a,b){
+                let sum = a+b;
+                return sum;
+            }
+            let result = add(10,5);
+            alert(result);
+        
+            //multiple return in a single function
+            function agecheck(age){
+                if (age >= 18){
+                    return true;
+                }
+                else{
+                    return confirm("Do you have permision from parents?");
+                }
+            }
+
+            let age = prompt("Age:","");
+            if(agecheck(age)){
+                alert("Access Granted");
+            }
+            else{
+                alert("Access Denied");
+            }
+        </script>
+    </body>
+</html>
