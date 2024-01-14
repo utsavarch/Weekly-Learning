@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            //
+            function ask(q,y,n){
+                if (confirm(q)) y()
+                else n();
+            }
+            function showOK(){
+                alert("Ok");
+            }
+            function showNo(){
+                alert("No");
+            }
+            ask("Do you agree?", showOK, showNo);
+            //passing function as parameter showOK and showNo works as callback function for y and n
+        </script>
+    </body>
+</html>

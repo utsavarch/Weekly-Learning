@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            //before used is function declaration now using function expression
+            let Name = function(){  //function assigned after a = sign is function expression
+                alert("Hello");
+            }
+            alert(Name); //will print the function code as it is assigned to the variable Name 
+
+            //function as value
+
+            function getName(){
+                prompt("Enter Your Name:","");
+            }
+            let N = getName;
+            N();
+            getName();
+        </script>
+    </body>
+</html>
