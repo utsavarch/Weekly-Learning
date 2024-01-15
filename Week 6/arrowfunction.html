@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+            // let func(arg1,....,argn)=>expression;
+            let sum = (a, b) => a + b;
+            alert(sum(4,5));
+            //no argument 
+            let print = () => alert("Hello");
+            print();
+            let age = prompt("Age:", );
+            let welcome = (age < 18) ? () => alert('Hello!') : () => alert("Greetings!");
+            welcome();
+            //multiline arrow function
+            let sub = (a,b) =>{
+                let dif = a-b;
+                return dif;
+            } 
+            alert(sub(2,3));
+
+            /*Replace Function Expressions with arrow functions in the code below:
+            function ask(question, yes, no) {
+                if (confirm(question)) yes();
+                else no();
+            }
+            ask(
+                "Do you agree?",
+                function() { alert("You agreed."); },
+                function() { alert("You canceled the execution."); }
+            );*/
+            function ask(question, yes, no) {
+                if (confirm(question)) yes();
+                else no();
+              }
+              
+              ask(
+                "Do you agree?", () => alert("You agreed."), () => alert("You canceled the execution.")
+              );
+        </script>
+    </body>
+</html>
