@@ -1,0 +1,17 @@
+<!--Write a function called calculateArea that takes the radius 
+    of a circle as an argument and returns the area of the circle. 
+    Use this function to calculate the area of a circle with a radius of 5 units.-->
+
+<html>
+    <body>
+        <script>
+            function calculateArea(r){
+                let area = Math.PI*r*r;
+                return area;
+            }
+            let r = prompt("Enter Radius:");
+            let a = calculateArea(parseFloat(r));
+            alert("Area: "+a);
+        </script>
+    </body>
+</html>
